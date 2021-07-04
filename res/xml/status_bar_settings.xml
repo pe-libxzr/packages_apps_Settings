@@ -57,6 +57,16 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/status_bar_date_title">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_show_lunar_calendar"
+            android:title="@string/qs_show_lunar_calendar_title"
+            android:summary="@string/qs_show_lunar_calendar_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="status_bar_battery_key"
         android:title="@string/status_bar_battery_title">
 
