@@ -40,15 +40,11 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private SwitchPreference mNetTrafficAutohide;
     private DropDownPreference mNetTrafficUnitType;
 
-    private boolean mHasNotch;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.network_traffic_settings);
         final ContentResolver resolver = getActivity().getContentResolver();
-
-        mHasNotch = CutoutUtils.hasCutout(getActivity());
 
         mNetTrafficMode = findPreference(Settings.System.NETWORK_TRAFFIC_LOCATION);
         mNetTrafficMode.setOnPreferenceChangeListener(this);
@@ -64,13 +60,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         int units = Settings.System.getInt(resolver,
                 Settings.System.NETWORK_TRAFFIC_UNIT_TYPE, /* Bytes */ 0);
         mNetTrafficUnitType.setValue(String.valueOf(units));
-
-        if (mHasNotch){
-            String[] locationEntriesNotch = getResources().getStringArray(R.array.network_traffic_mode_entries_notch);
-            String[] locationEntriesNotchValues = getResources().getStringArray(R.array.network_traffic_mode_values_notch);
-            mNetTrafficMode.setEntries(locationEntriesNotch);
-            mNetTrafficMode.setEntryValues(locationEntriesNotchValues);
-        }
 
         updateEnabledStates(mode);
     }
