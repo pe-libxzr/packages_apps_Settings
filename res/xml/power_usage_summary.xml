@@ -63,6 +63,12 @@
         android:summary="@string/fast_charging_summary"
         settings:controller="com.android.settings.fuelgauge.FastChargingPreferenceController"/>
 
+    <SwitchPreference
+        android:key="optimized_charge"
+        android:title="@string/optimized_charge_title"
+        android:summary="@string/optimized_charge_summary"
+        settings:controller="moe.xzr.controllers.OptimizedChargePreferenceController"/>
+
     <com.android.settings.fuelgauge.PowerGaugePreference
         android:key="last_full_charge"
         android:title="@string/battery_last_full_charge"
