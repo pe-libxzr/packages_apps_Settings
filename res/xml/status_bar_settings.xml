@@ -54,6 +54,12 @@
             android:entries="@array/status_bar_am_pm_entries"
             android:entryValues="@array/status_bar_am_pm_values"
             android:defaultValue="2" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="specific_mobile_data_type"
+            android:title="@string/specific_mobile_data_type_title"
+            android:summary="@string/specific_mobile_data_type_summary"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory

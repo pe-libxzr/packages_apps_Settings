@@ -2,4 +2,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="optimized_charge_title">充电优化</string>
     <string name="optimized_charge_summary">将充电限制在75%-80%以延长电池寿命</string>
+    <string name="specific_mobile_data_type_title">展示具体的移动数据类型</string>
+    <string name="specific_mobile_data_type_summary">使用 LTE / NR NSA / NR SA 代替 4G / 5G</string>
 </resources>
