@@ -4,4 +4,6 @@
     <string name="optimized_charge_summary">Limit charging to 75%-80% to extend battery life</string>
     <string name="specific_mobile_data_type_title">Show specific mobile data type</string>
     <string name="specific_mobile_data_type_summary">Show LTE / NR NSA / NR SA instead of 4G / 5G</string>
+    <string name="nr_mode_switcher_title">5G Modes</string>
+    <string name="nr_mode_switcher_summary">Specify NSA / SA mode for 5G</string>
 </resources>

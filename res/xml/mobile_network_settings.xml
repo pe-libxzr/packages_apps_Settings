@@ -142,6 +142,17 @@
             settings:controller="com.android.settings.network.telephony.EnabledNetworkModePreferenceController"/>
 
         <Preference
+            android:key="nr_mode_switcher"
+            android:persistent="false"
+            android:title="@string/nr_mode_switcher_title"
+            android:summary="@string/nr_mode_switcher_summary"
+            settings:controller="moe.xzr.controllers.NRModeSwitcherController">
+            <intent
+                android:targetPackage="moe.xzr.nrmodeswitcher"
+                android:targetClass="moe.xzr.nrmodeswitcher.MainActivity" />
+        </Preference>
+
+        <Preference
             android:key="carrier_settings_version_key"
             android:title="@string/carrier_settings_version"
             android:enabled="false"
